@@ -1,5 +1,4 @@
 
-```markdown
 # abotlogix Step Indicator 🚀
 
 A beautiful, customizable step indicator library for Jetpack Compose with 7 different visual variants. Perfect for onboarding flows, multi-step forms, and progress tracking.
