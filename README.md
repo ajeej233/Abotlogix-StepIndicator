@@ -1,17 +1,20 @@
 
 # abotlogix Step Indicator 🚀
 
-A beautiful, customizable step indicator library for Jetpack Compose with 7 different visual variants. Perfect for onboarding flows, multi-step forms, and progress tracking.
+A beautiful, customizable step indicator library for Jetpack Compose with multiple different visual variants. Perfect for onboarding flows, multi-step forms, and progress tracking.
 
 ## Features
 
-- 📱 **7 Different Styles** - Choose from various visual designs
+- 📱 **Multiple Styles Available** - Choose from various visual designs
 - ➡️ **Horizontal & Vertical Layouts** - Flexible progress displays  
 - 🎨 **Fully Customizable** - Colors, sizes, and animations
 - ⚡ **Smooth Animations** - Polished transition effects
 - 🎯 **Material Design 3** - Modern Android design system
 - 🔧 **Easy Integration** - Simple API with sensible defaults
 
+  **🛠️ Additional styles and enhancements will be released in upcoming updates — and that’s just the beginning. Expect more cool stuff soon!**
+
+---
 ## 📸 Screenshots
 
 ![Horizontal Progress](https://github.com/ajeej233/abotlogix-stepindicator/raw/main/screenshots/horizontal.png)
@@ -38,7 +41,7 @@ Add this to your **app-level** `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("com.github.ajeej233:abotlogix-stepindicator:1.0.0")
+    implementation("com.github.ajeej233:abotlogix-stepindicator:latest")
 }
 ```
 
@@ -124,12 +127,12 @@ ProfessionalStepIndicator(
 
 ```kotlin
 enum class IndicatorVariant {
-    VARIANT_2, // Material Design styled
-    VARIANT_3, // Professional with glow effect
-    VARIANT_4, // Neumorphic design
-    VARIANT_5, // Gradient floating circles
-    VARIANT_6, // Classic with connectors
-    VARIANT_7  // Modern 3D effect
+    VARIANT_2, 
+    VARIANT_3,
+    VARIANT_4, 
+    VARIANT_5, 
+    VARIANT_6, 
+    VARIANT_7 
 }
 ```
 
@@ -207,17 +210,10 @@ fun CheckoutProgress() {
 
 This repository includes a sample app demonstrating all features. Check the `app/` directory for complete usage examples.
 
-## Changelog
-
-### Version 1.0.0
-- Initial release with 7 indicator variants
-- Horizontal and vertical progress flows
-- Complete customization support
-- Smooth animations and transitions
 
 ## About
 
-Developed by [Ajeej](https://www.abotlogix.com) - creating innovative mobile solutions.
+Developed by [Ajeej](https://www.linkedin.com/in/ajeej-s-23b75a231) - creating innovative mobile solutions.
 
 ## License
 
@@ -231,10 +227,12 @@ We welcome contributions! Please feel free to submit issues, feature requests, o
 
 For support and questions:
 - Create an issue on GitHub
-- Email: support@abotlogix.com
 - Visit: [https://www.abotlogix.com](https://www.abotlogix.com)
-- linkedien: [www.linkedin.com/in/ajeej-s-23b75a231](Ajeej)
-- linkedien: [www.linkedin.com/company/abotlogix](Abotlogix)
+- linkedien: [Ajeej S](https://www.linkedin.com/in/ajeej-s-23b75a231)
+- linkedien: [Abotlogix](https://www.linkedin.com/company/abotlogix)
+- Instagram: [Abotlogix](https://www.instagram.com/abotlogix)
+
+
 
 
 ```
