@@ -2,6 +2,8 @@ plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
     alias(libs.plugins.kotlin.compose)
+    id("maven-publish")
+
 
 
 }
@@ -38,9 +40,27 @@ android {
     }
 
     // Add publishing configuration
-
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
+// ✅ Publishing block for JitPack
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
 
+                groupId = 'com.github.ajeej233'       // your GitHub username
+                artifactId = 'abotlogix-stepindicator' // your repo name (or custom name)
+                version = '1.0.1'                      // new version you're releasing
+            }
+        }
+    }
+}
 dependencies {
 
     implementation(platform("androidx.compose:compose-bom:2023.10.01"))
@@ -55,3 +75,4 @@ dependencies {
     androidTestImplementation libs.androidx.ui.test.junit4
 
 }
+
